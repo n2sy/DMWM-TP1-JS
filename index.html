@@ -10,21 +10,25 @@
     <div class="container">
         <div class="p-3 mb-2 bg-primary text-white">Gestionnaire des dépenses</div>
         <label for="">Intitulé de la dépense</label>
-        <input class="form-control" type="text">
+        <input id="intitule" class="form-control" type="text">
         <label for="">Somme de la dépense</label>
-        <input class="form-control" type="number">
+        <input id="montant" class="form-control" type="number">
         <div style="text-align: end; margin : 10px">
-            <button class="btn btn-success">Ajouter</button>
-            <button class="btn btn-danger">Effacer</button>
+            <button id="btn-add" class="btn btn-success">Ajouter</button>
+            <button id="btn-erase" class="btn btn-danger">Effacer</button>
 
         </div>
 
-        <ol>
-            
+        <input id="filter" placeholder="Filtrer par prix" type="text" class="form-control">
+        <br>
+        <ol class="list-group" id="list-dep">
+         
         </ol>
+
+        <strong>Total des dépenses : <span id="total-dep">........</span></strong>
 
 
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
